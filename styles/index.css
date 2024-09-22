@@ -1,0 +1,103 @@
+/* Setting the background color for the body */
+body {
+    background-color: #302e2b; 
+}
+
+/* Styling the root container for proper layout and centering */
+#root {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Defining layout for each row of squares on the chessboard */
+.squareRow {
+    display: flex;         
+}
+
+/* Defining the size and interaction properties of each square */
+.square {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Styling for white squares on the chessboard */
+.white {
+    background-color: #eeeed2;   
+}
+
+/* Styling for black squares on the chessboard */
+.black {
+    background-color: #769656;
+}
+
+/* Defining size and interaction properties for pieces */
+.piece {
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Styling for highlighted squares during moves */
+.highlight {
+    width: 30px;
+    display: block;
+    height: 30px;
+    margin: auto;
+    margin-top: 22px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Highlight for yellow piece selection */
+.pieceHighlightYellow {
+    background: #f7f769;
+}
+
+/* Styling for squares where a piece can be captured */
+.captureColor {
+    background-color: #8b0000;
+}
+
+/* Styling for modal popups */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Adding blur effect to background when modal is active */
+.blur {
+    filter: blur(20px);
+}
+
+/* Styling the text in the modal */
+.modal p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px 8px;
+    font-size: 25px;
+    background-color: navy;
+    color: white;
+}
+
+/* Adding hover effect to modal images */
+.modal img:hover {
+    border: 5px solid #769656;
+    cursor: pointer;
+}
+
+/* Base styling for modal images */
+.modal img {
+    border: 5px solid transparent;
+}
